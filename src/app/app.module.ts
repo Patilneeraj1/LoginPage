@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
-import { LoginComponent } from './components/login/login.component';
+import { LoginComponent } from './components/login-page/login.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HomeComponent } from './components/home/home.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
@@ -15,16 +15,19 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {FormsModule} from '@angular/forms';
 import {MatIconModule} from '@angular/material/icon';
+import { SignupComponent } from './components/signup/signup.component';
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
-    
     DashboardComponent,
     HomeComponent,
     MypicComponent,
-    
-    
+    SignupComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -36,6 +39,8 @@ import {MatIconModule} from '@angular/material/icon';
     FormsModule,
     MatIconModule,
     MatInputModule,
+    
+
   ],
   providers: [],
   bootstrap: [AppComponent]

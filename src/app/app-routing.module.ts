@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
-import { LoginComponent } from './components/login/login.component';
+import { LoginComponent } from './components/login-page/login.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { MypicComponent } from './components/mypic/mypic.component';
+import { SignupComponent } from './components/signup/signup.component';
+
 
 const routes: Routes = [
 {
@@ -12,7 +14,7 @@ const routes: Routes = [
   pathMatch: 'full',
 },
 {
-  path: 'login',
+  path: 'login-page',
   component: LoginComponent,
   pathMatch: "full",
 },
@@ -25,10 +27,17 @@ const routes: Routes = [
   path: 'mypic',
   component: MypicComponent,
   pathMatch: "full",
+},
+{
+  path: 'signup',
+  component: SignupComponent,
+  
 }
+
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
+  
 })
 export class AppRoutingModule { }

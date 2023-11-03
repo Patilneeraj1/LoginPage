@@ -2,8 +2,6 @@
     <span>
         <a mat-icon-button routerLink="/">Home</a>
     </span>
-    <span class = 'example-spacer'></span>
-    <a mat-flat-button routerLink='/login'>Login</a>
-    
+    <span class='example-spacer'></span>
+    <a mat-flat-button *ngIf="isLoginPage" routerLink='/login-page'>Login Page</a>
 </mat-toolbar>
-
