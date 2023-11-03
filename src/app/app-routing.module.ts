@@ -28,10 +28,16 @@ const routes: Routes = [
   component: MypicComponent,
   pathMatch: "full",
 },
+
 {
-  path: 'signup',
+  path: "login",
+  component: LoginComponent,
+  pathMatch: "full"
+},
+{
+  path: "signup",
   component: SignupComponent,
-  
+  pathMatch: "full"
 }
 
 ];

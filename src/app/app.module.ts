@@ -16,6 +16,7 @@ import {MatInputModule} from '@angular/material/input';
 import {FormsModule} from '@angular/forms';
 import {MatIconModule} from '@angular/material/icon';
 import { SignupComponent } from './components/signup/signup.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 
 
@@ -27,6 +28,7 @@ import { SignupComponent } from './components/signup/signup.component';
     HomeComponent,
     MypicComponent,
     SignupComponent,
+    
 
   ],
   imports: [
@@ -39,6 +41,7 @@ import { SignupComponent } from './components/signup/signup.component';
     FormsModule,
     MatIconModule,
     MatInputModule,
+    MatDialogModule
     
 
   ],
